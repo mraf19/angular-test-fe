@@ -1,6 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav
     #drawer
+    appStyle
     class="sidenav"
     fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -8,10 +9,10 @@
     [opened]="(isHandset$ | async) === false"
   >
     <mat-toolbar><img src="../../assets/iconfcc.svg" /></mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item routerLink="/dashboard">
-        <img src="../../assets/dahsboard.svg" />
-        Dashboard
+    <mat-nav-list appStyle>
+      <a class="" routerLink="">
+        <img clas src="../../assets/dahsboard.svg" />
+        <p class="text-white">Dashboard</p>
       </a>
     </mat-nav-list>
     <mat-nav-list>
@@ -23,43 +24,43 @@
     <mat-nav-list>
       <a mat-list-item routerLink="/maintanace">
         <img src="../../assets/maintanance.svg" />
-        Maintanace
+        <p class="text-white">Maintenance</p>
       </a>
     </mat-nav-list>
     <mat-nav-list>
       <a mat-list-item routerLink="/masterdata">
         <img src="../../assets/masterdata.svg" />
-        Master Data
+        <p class="text-white">Master Data</p>
       </a>
     </mat-nav-list>
     <mat-nav-list>
       <a mat-list-item routerLink="/activityuser">
         <img src="../../assets/activityuser.svg" />
-        Activity User
+        <p class="text-white">Activity User</p>
       </a>
     </mat-nav-list>
     <mat-nav-list>
       <a mat-list-item routerLink="/managementuser">
         <img src="../../assets/managementuser.svg" />
-        Management User
+        <p class="text-white">Management User</p>
       </a>
     </mat-nav-list>
     <mat-nav-list>
       <a mat-list-item routerLink="/account">
         <img src="../../assets/account.svg" />
-        Account
+        <p class="text-white">Account</p>
       </a>
     </mat-nav-list>
     <mat-nav-list>
       <a mat-list-item routerLink="/settings">
         <img src="../../assets/settings.svg" />
-        Settings
+        <p class="text-white">Settings</p>
       </a>
     </mat-nav-list>
     <mat-nav-list>
       <a mat-list-item routerLink="/logout">
         <img src="../../assets/logout.svg" />
-        Log Out
+        <p class="text-white">Log Out</p>
       </a>
     </mat-nav-list>
   </mat-sidenav>

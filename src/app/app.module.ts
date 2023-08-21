@@ -12,13 +12,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MainContentComponent } from './main-content/main-content.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ClassDirective } from './class.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     MainContentComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ClassDirective
   ],
   imports: [
     BrowserModule,
