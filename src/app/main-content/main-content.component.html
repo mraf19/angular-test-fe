@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="w-full mt-2">
-      <div [chart]="piechart" class="h-[250px] w-2/3"></div>
+      <div [chart]="timechart" class="h-[250px] w-2/3"></div>
     </div>
   </div>
   <div
@@ -56,8 +56,11 @@
     class="block w-[33%] h-[33%] p-6 bg-main text-white border border-man-200 rounded-lg shadow"
   >
     <div class="w-full mt-2">
-      <div [chart]="linechart" class="w-full h-[130px] border-b border-white"></div>
-      <div [chart]="linechart2" class="w-full h-[130px]"></div>
+      <div
+        [chart]="MTTRchart"
+        class="w-full h-[130px] border-b border-white"
+      ></div>
+      <div [chart]="MTBFchart" class="w-full h-[130px]"></div>
     </div>
   </div>
 
@@ -74,7 +77,7 @@
       </div>
     </div>
     <div class="w-full mt-2">
-      <canvas id="timeMachine"></canvas>
+      <div [chart]="productionChart" class="h-[250px]"></div>
     </div>
   </div>
   <div
@@ -106,7 +109,7 @@
       </div>
     </div>
     <div class="w-full mt-2">
-      <canvas id="timeMachine"></canvas>
+      <div [chart]="ampereChart" class="h-[250px]"></div>
     </div>
   </div>
   <div
@@ -122,7 +125,7 @@
       </div>
     </div>
     <div class="w-full mt-2">
-      <canvas id="timeMachine"></canvas>
+      <div [chart]="frequentChart" class="h-[250px]"></div>
     </div>
   </div>
 </div>
