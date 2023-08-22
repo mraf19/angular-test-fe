@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { MainContentComponent } from './main-content/main-content.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ClassDirective } from './class.directive';
+import { CustomHeightDirective } from './custom-height.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ClassDirective } from './class.directive';
     NavigationComponent,
     MainContentComponent,
     NotFoundComponent,
-    ClassDirective
+    ClassDirective,
+    CustomHeightDirective
   ],
   imports: [
     BrowserModule,

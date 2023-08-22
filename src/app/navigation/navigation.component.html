@@ -8,59 +8,59 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar><img src="../../assets/iconfcc.svg" /></mat-toolbar>
-    <mat-nav-list appStyle>
+    <mat-toolbar><img class="mx-auto mb-2" src="../../assets/iconfcc.svg" /></mat-toolbar>
+    <mat-nav-list appCustomHeight>
       <a class="" routerLink="">
-        <img clas src="../../assets/dahsboard.svg" />
-        <p class="text-white">Dashboard</p>
+        <img class="mx-auto mb-2" class="mx-auto mb-2" src="../../assets/dahsboard.svg" />
+        <p class="text-white text-center text-center">Dashboard</p>
       </a>
     </mat-nav-list>
-    <mat-nav-list>
+    <mat-nav-list appCustomHeight >
       <a mat-list-item routerLink="/detail">
-        <img src="../../assets/detail.svg" />
-        Detail
+        <img class="mx-auto mb-2" src="../../assets/detail.svg" />
+        <p class="text-white text-center">Detail</p>
       </a>
     </mat-nav-list>
-    <mat-nav-list>
+    <mat-nav-list appCustomHeight>
       <a mat-list-item routerLink="/maintanace">
-        <img src="../../assets/maintanance.svg" />
-        <p class="text-white">Maintenance</p>
+        <img class="mx-auto mb-2" src="../../assets/maintanance.svg" />
+        <p class="text-white text-center">Maintenance</p>
       </a>
     </mat-nav-list>
-    <mat-nav-list>
+    <mat-nav-list appCustomHeight>
       <a mat-list-item routerLink="/masterdata">
-        <img src="../../assets/masterdata.svg" />
-        <p class="text-white">Master Data</p>
+        <img class="mx-auto mb-2" src="../../assets/masterdata.svg" />
+        <p class="text-white text-center">Master Data</p>
       </a>
     </mat-nav-list>
-    <mat-nav-list>
+    <mat-nav-list appCustomHeight>
       <a mat-list-item routerLink="/activityuser">
-        <img src="../../assets/activityuser.svg" />
-        <p class="text-white">Activity User</p>
+        <img class="mx-auto mb-2" src="../../assets/activityuser.svg" />
+        <p class="text-white text-center">Activity User</p>
       </a>
     </mat-nav-list>
-    <mat-nav-list>
+    <mat-nav-list appCustomHeight>
       <a mat-list-item routerLink="/managementuser">
-        <img src="../../assets/managementuser.svg" />
-        <p class="text-white">Management User</p>
+        <img class="mx-auto mb-2" src="../../assets/managementuser.svg" />
+        <p class="text-white text-center">Management User</p>
       </a>
     </mat-nav-list>
-    <mat-nav-list>
+    <mat-nav-list appCustomHeight>
       <a mat-list-item routerLink="/account">
-        <img src="../../assets/account.svg" />
-        <p class="text-white">Account</p>
+        <img class="mx-auto mb-2" src="../../assets/account.svg" />
+        <p class="text-white text-center">Account</p>
       </a>
     </mat-nav-list>
-    <mat-nav-list>
+    <mat-nav-list appCustomHeight>
       <a mat-list-item routerLink="/settings">
-        <img src="../../assets/settings.svg" />
-        <p class="text-white">Settings</p>
+        <img class="mx-auto mb-2" src="../../assets/settings.svg" />
+        <p class="text-white text-center">Settings</p>
       </a>
     </mat-nav-list>
-    <mat-nav-list>
+    <mat-nav-list appCustomHeight>
       <a mat-list-item routerLink="/logout">
-        <img src="../../assets/logout.svg" />
-        <p class="text-white">Log Out</p>
+        <img class="mx-auto mb-2" src="../../assets/logout.svg" />
+        <p class="text-white text-center">Log Out</p>
       </a>
     </mat-nav-list>
   </mat-sidenav>
