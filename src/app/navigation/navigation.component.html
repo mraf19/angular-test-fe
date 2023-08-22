@@ -8,14 +8,20 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar><img class="mx-auto mb-2" src="../../assets/iconfcc.svg" /></mat-toolbar>
+    <mat-toolbar
+      ><img class="mx-auto mb-2" src="../../assets/iconfcc.svg"
+    /></mat-toolbar>
     <mat-nav-list appCustomHeight>
       <a class="" routerLink="">
-        <img class="mx-auto mb-2" class="mx-auto mb-2" src="../../assets/dahsboard.svg" />
-        <p class="text-white text-center text-center">Dashboard</p>
+        <img
+          class="mx-auto mb-2"
+          class="mx-auto mb-2"
+          src="../../assets/dahsboard.svg"
+        />
+        <p class="text-white text-center">Dashboard</p>
       </a>
     </mat-nav-list>
-    <mat-nav-list appCustomHeight >
+    <mat-nav-list appCustomHeight>
       <a mat-list-item routerLink="/detail">
         <img class="mx-auto mb-2" src="../../assets/detail.svg" />
         <p class="text-white text-center">Detail</p>

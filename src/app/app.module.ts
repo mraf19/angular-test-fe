@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ChartModule } from 'angular-highcharts';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,7 +23,7 @@ import { CustomHeightDirective } from './custom-height.directive';
     MainContentComponent,
     NotFoundComponent,
     ClassDirective,
-    CustomHeightDirective
+    CustomHeightDirective,
   ],
   imports: [
     BrowserModule,
@@ -35,9 +34,9 @@ import { CustomHeightDirective } from './custom-height.directive';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    ChartModule
+    ChartModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

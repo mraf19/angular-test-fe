@@ -57,6 +57,7 @@ export class MainContentComponent {
       } as any,
     ],
   });
+
   MTBFchart = new Chart({
     chart: {
       type: 'line',
